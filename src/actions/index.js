@@ -1,11 +1,13 @@
+// reducerでも使うので使い回しのためexportしておく
+export const INCREMENT = 'INCREMENT'
+export const DECREMENT = 'DECREMENT'
 
-const incriment = () => {
-    return {
-        type: 'INCREMENT'
-    }
-}
+export const incriment = () => ({
+    type: 'INCREMENT'
+})
 
-const decrement = () => {
+export const decrement = () => {
     return {
      type:'DECREMENT'
-    }   
+    } 
+}

@@ -14,7 +14,7 @@ class Counter extends Component {
 		this.setState({count: this.state.count + 1})
 	}
 
-	handleMinusButton = () =>{
+	handleMinusButton = () => {
 		console.log("handlePlusButton")
 		this.setState({count: this.state.count - 1})
 	}
