@@ -5,13 +5,16 @@ import { Provider } from 'react-redux';
 
 import './index.css';
 import reducer from './reducers';
-import App from './compornets/App';
+import App from './compornents/App';
 import * as serviceWorker from './serviceWorker';
 
+// アプリケーションで内部で唯一のもの、アプリケーション内部の全てのStateはこのStoreに集約される。
+const store = createStore(reducer)
+// アプリリーション内部の全階層でStoreを使えるようにする為、Providerでラップする。
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

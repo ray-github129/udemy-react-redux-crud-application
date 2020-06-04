@@ -5,7 +5,7 @@ import {INCREMENT,DECREMENT} from '../actions'
 const initialState = { value: 0 }
 
 //reducerを関数として定義
-export default (state = initialState, action) => {
+export default (state = initialState , action) => {
     switch (action.type) {
         case INCREMENT:
             return { value: state.value + 1}
