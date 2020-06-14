@@ -114,3 +114,4 @@ export function unregister() {
       registration.unregister();
     });
   }
+}
